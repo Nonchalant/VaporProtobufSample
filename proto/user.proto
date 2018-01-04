@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+import "proto/gender.proto";
+
+message UserResponse {
+    repeated User users = 1;
+}
+
+message UserRequest {
+    string name = 1;
+    Gender gender = 2;
+}
+
+message User {
+    int64 id = 1;
+    string name = 2;
+    Gender gender = 3;
+}

@@ -1,0 +1,6 @@
+version: "2"
+services:
+  server:
+    image: nonchalant/server:0.1
+    ports:
+      - "9000:9000"
